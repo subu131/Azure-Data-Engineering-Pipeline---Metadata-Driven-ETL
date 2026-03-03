@@ -1,4 +1,4 @@
-# Azure-Data-Engineering-Pipeline---Metadata-Driven-ETL
+# Azure-Data-Engineering-Pipeline-Metadata-Driven-ETL
 
 I've built this project focusing on production-readiness, covering edge cases through a metadata-driven ETL architecture.
 
