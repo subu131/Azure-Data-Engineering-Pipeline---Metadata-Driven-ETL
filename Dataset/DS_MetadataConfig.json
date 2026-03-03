@@ -1,0 +1,195 @@
+{
+    "name": "DS_MetadataConfig",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "LS_MetadataDB",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "config_id",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "source_type",
+                "type": "varchar"
+            },
+            {
+                "name": "source_connection_name",
+                "type": "varchar"
+            },
+            {
+                "name": "source_server",
+                "type": "varchar"
+            },
+            {
+                "name": "source_database",
+                "type": "varchar"
+            },
+            {
+                "name": "source_schema",
+                "type": "varchar"
+            },
+            {
+                "name": "source_table",
+                "type": "varchar"
+            },
+            {
+                "name": "api_endpoint",
+                "type": "varchar"
+            },
+            {
+                "name": "api_method",
+                "type": "varchar"
+            },
+            {
+                "name": "api_auth_type",
+                "type": "varchar"
+            },
+            {
+                "name": "file_path",
+                "type": "varchar"
+            },
+            {
+                "name": "file_format",
+                "type": "varchar"
+            },
+            {
+                "name": "bronze_container",
+                "type": "varchar"
+            },
+            {
+                "name": "bronze_path",
+                "type": "varchar"
+            },
+            {
+                "name": "silver_container",
+                "type": "varchar"
+            },
+            {
+                "name": "silver_path",
+                "type": "varchar"
+            },
+            {
+                "name": "gold_container",
+                "type": "varchar"
+            },
+            {
+                "name": "gold_path",
+                "type": "varchar"
+            },
+            {
+                "name": "load_type",
+                "type": "varchar"
+            },
+            {
+                "name": "watermark_column",
+                "type": "varchar"
+            },
+            {
+                "name": "partition_column",
+                "type": "varchar"
+            },
+            {
+                "name": "is_dimension",
+                "type": "bit"
+            },
+            {
+                "name": "scd_type",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "business_key",
+                "type": "varchar"
+            },
+            {
+                "name": "compare_columns",
+                "type": "nvarchar"
+            },
+            {
+                "name": "schema_definition",
+                "type": "nvarchar"
+            },
+            {
+                "name": "handle_schema_drift",
+                "type": "bit"
+            },
+            {
+                "name": "reject_schema_changes",
+                "type": "bit"
+            },
+            {
+                "name": "enable_data_quality_checks",
+                "type": "bit"
+            },
+            {
+                "name": "null_check_columns",
+                "type": "varchar"
+            },
+            {
+                "name": "unique_check_columns",
+                "type": "varchar"
+            },
+            {
+                "name": "is_active",
+                "type": "bit"
+            },
+            {
+                "name": "load_frequency",
+                "type": "varchar"
+            },
+            {
+                "name": "schedule_time",
+                "type": "varchar"
+            },
+            {
+                "name": "execution_order",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "depends_on",
+                "type": "varchar"
+            },
+            {
+                "name": "max_retry_count",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "retry_interval_minutes",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "created_by",
+                "type": "varchar"
+            },
+            {
+                "name": "created_date",
+                "type": "datetime",
+                "precision": 23,
+                "scale": 3
+            },
+            {
+                "name": "modified_by",
+                "type": "varchar"
+            },
+            {
+                "name": "modified_date",
+                "type": "datetime",
+                "precision": 23,
+                "scale": 3
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "pipeline_config"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
